@@ -3,3 +3,14 @@
     border-radius:4px;
     text-decoration:none;
 }
+
+body{
+ background-image: url("todobg.jpeg");
+background-repeat: no-repeat;
+    background-size: cover ;
+    margin: auto;
+    background-position: center;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    
+}

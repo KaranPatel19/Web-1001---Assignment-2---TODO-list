@@ -1,0 +1,39 @@
+﻿@model ToDoList.Models.ToDoLists
+
+
+
+    
+
+<section>
+    <div class="container">
+        <div class="card-body">
+            
+            
+            <form method="post">
+                <h3 style="color: #6c757d">ToDo Name</h3> 
+                
+                <input type="text" input asp-for="ToDoValue" 
+                       class="flex-fill" 
+                       id="exampleFormControlInput1" 
+                       style="background: #adb5bd "
+                       placeholder="Add new activity...">
+
+                <div class="text">
+                    <button type="submit" value="submit" class="btn_submit btn-primary"
+                            style="margin-top:20px; background-color: black" 
+                            title="Click here to save">
+                        Add
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
